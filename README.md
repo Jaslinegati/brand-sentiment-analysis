@@ -61,17 +61,17 @@ Range: −100 (all negative) to +100 (all positive).
 **Part 1 — Overall Landscape**  
 Sentiment split across all airlines (donut chart), per-airline stacked bar, and tweet volume.
 
-![Sentiment Overview](data/processed/sentiment_overview.png)
+![Sentiment Overview](assets/sentiment_overview.png)
 
 **Part 2 — Brand Health Score**  
 Single composite metric per airline with GOOD / AT RISK / CRITICAL ratings.
 
-![Brand Health Score](data/processed/brand_health_score.png)
+![Brand Health Score](assets/brand_health_score.png)
 
 **Part 3 — Why Do People Complain?**  
 Breakdown of 10 negative reason categories. Heatmap showing each airline's complaint profile — who suffers most from delays vs lost baggage vs poor customer service.
 
-![Complaint Analysis](data/processed/complaint_analysis.png)
+![Complaint Analysis](assets/complaint_analysis.png)
 
 **Part 4 — Sentiment by Time of Day**  
 Tweet volume and negative rate by hour — identifies peak complaint windows for customer service staffing decisions.
@@ -89,12 +89,12 @@ Applies VADER (built for social media) to produce a continuous −1 to +1 score 
 **Part 3 — Word Frequency Analysis**  
 Top 20 words in positive vs negative tweets after cleaning. Shows clear vocabulary separation between complaint language and praise language.
 
-![Word Frequency](data/processed/word_frequency.png)
+![Word Frequency](assets/word_frequency.png)
 
 **Part 4 — TF-IDF Complaint Classifier**  
 Trains a Logistic Regression on TF-IDF features to classify tweets as negative or not. Extracts top predictive words in each direction — the most interpretable output for a business stakeholder.
 
-![TF-IDF Coefficients](data/processed/tfidf_coefficients.png)
+![TF-IDF Coefficients](assets/tfidf_coefficients.png)
 
 **Part 5 — Per-Airline Complaint Heatmap**  
 VADER score broken down by airline × complaint type — shows which issues cause the most emotional intensity per airline.
